@@ -6,9 +6,45 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
   <title>Canvas</title>
+
 </head>
 <body>
-  <canvas width="512" height="512" class="canvas" id="canvas">Your browser is not support canvas tag</canvas>
-  <script src="script_2.js"></script>
+  <div class="wrapper">
+    <header class="header">
+      <button class="menu--button"></button>
+      <h1 class="header--text">CodeJam - Pallete</h1>
+    </header>
+    <div class="tools-canvas-wrapper">
+      <section class="tools-color-section">
+        <div class="tools-section">
+          <div class="paint-bucket">
+            <button class="paint-bucket--button"></button>
+            <p class="button--text">Paint bucket</p>
+          </div>
+          <div class="choose-color">
+            <button class="choose-color--button"></button>
+            <p class="button--text">Choose color</p>
+          </div>
+          <div class="move">
+            <button class="move--button"></button>
+            <p class="button--text">Move</p>
+          </div>
+          <div class="transform">
+            <button class="transform--button"></button>
+            <p class="button--text">Transform</p>
+          </div>
+        </div>
+      </section>
+      <canvas class="canvas" id="canvas" width="512" height="512">Your browser is not support canvas tag</canvas>
+      <script src="script_2.js"></script>
+      <section class="canvas-tools">
+          <ul class="canvas-tools-list">
+            <li> <a href="4x4.html">4x4</a></li>
+            <li> <a href="32x32.html">32x32</a></li>
+            <li><a href="image.html">256x256</a></li>
+          </ul>
+        </section>
+    </div>
+  </div>
 </body>
 </html>
