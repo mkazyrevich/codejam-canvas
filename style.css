@@ -1,5 +1,172 @@
+@font-face {
+  font-family: Roboto;
+  src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+} 
+
+.header {
+  height: 48px;
+  margin: 0 0 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.menu--button {
+  width: 40px;
+  height: 40px;
+  background: url(assets/images/navicon.svg) no-repeat;
+  background-size: cover;
+  border: 0;
+}
+
+.header--text {
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.tools-section {
+  width: 228px;
+  margin: 79px 0 0 29px;
+  padding: 12px 0 42px 18px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.paint-bucket {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;  
+}
+
+.paint-bucket--button {
+  width: 24px;
+  height: 24px;
+  background: url(assets/images/icon-paint.svg) no-repeat;
+  background-size: cover;
+  border: 0;
+}
+
+.button--text {
+  margin: 0;
+  padding: 0 0 0 33px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.541327);
+}
+
+.choose-color {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.choose-color--button {
+  width: 24px;
+  height: 24px;
+  background: url(assets/images/icon-choose.svg) no-repeat;
+  background-size: cover;
+  border: 0;
+}
+
+.move {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  border-top: solid 1px rgba(0, 0, 0, 0.12);
+  padding-top: 20px;
+}
+
+.move--button {
+  width: 24px;
+  height: 24px;
+  background: url(assets/images/icon-move.svg) no-repeat;
+  background-size: cover;
+  border: 0;
+}
+
+.transform {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  border: 0;
+}
+
+.transform--button {
+  width: 24px;
+  height: 24px;
+  background: url(assets/images/icon-transform.svg) no-repeat;
+  background-size: cover;
+  border: 0;
+}
+
+.tools-canvas-wrapper {
+  display: flex;
+}
+
 .canvas {
   image-rendering: pixelated;
   width: 512px;
   height: 512px;
+  margin: 190px 160px 0 220px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
 }
+
+.canvas-tools {
+  width: 228px;
+  height: min-content;
+  margin: 79px 0 0 0;
+  padding: 12px 0 115px 0;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.canvas-tools a {
+  width: 100%;
+  padding: 10px 0 0 90px;
+  text-decoration: none;
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.541327);
+  background: url(assets/images/icon-canvas-tools.png) no-repeat;
+  background-position: 35px 15px; 
+}
+
+.canvas-tools-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.canvas-tools-list li {
+  display: flex;
+}
+
+.canvas-tools a:hover {
+  background-color: rgb(168, 159, 159);
+}
+
+
+
